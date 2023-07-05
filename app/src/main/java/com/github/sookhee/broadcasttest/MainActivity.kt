@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // notification 등록을 위한 퍼미션 받기
         val checkResult = ContextCompat.checkSelfPermission(this, POST_NOTIFICATIONS)
         if (checkResult == PackageManager.PERMISSION_DENIED) {
             permissionResultLauncher.launch(POST_NOTIFICATIONS)

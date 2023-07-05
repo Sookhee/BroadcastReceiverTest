@@ -8,7 +8,7 @@ import android.os.Build
 class DeviceBootReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {
         when(intent?.action) {
-            Intent.ACTION_BOOT_COMPLETED -> startService(context!!)
+            Intent.ACTION_BOOT_COMPLETED -> startService(context!!) // service start
         }
     }
 
